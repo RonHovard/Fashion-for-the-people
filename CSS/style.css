@@ -1,0 +1,130 @@
+.header {
+    color: blueviolet/*#5f8cc7*/;
+    background-color: orange/*#fdc97d*/ ;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+
+img[alt="main"] {
+    outline: 5px solid orange;
+    margin: 1px 1px 1px -80px
+}
+
+body {
+    background-color: #fefee5;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li a {
+    color: dodgerblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 3px solid transparent;
+}
+
+.heading {
+    /*border:1px solid red;*/
+    color: black;
+    font-size: 18px;
+    font-weight:400  
+    background-color: #eaeaea;
+}
+
+.heading + p {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px
+}
+
+.list>li {
+    list-style-image: url(../img/checkmarks/145.png)
+}
+
+.list_2 {
+    list-style-image: url(../img/checkmarks/7.png)
+}
+
+form input[type="text"] {
+    width: 250px;
+    line-height: 20px
+} 
+
+form input[placeholder], textarea[placeholder] {
+    background-color: #fffb;
+    color: #930;  /* Цвет текста */
+    text-align: center;
+    font-size: 10px;
+    font-style: oblique
+}
+
+A IMG, .title {
+    outline: 3px solid #00af64; /* Цветная рамка */
+    margin: 5px 5px 5px 40px
+}
+
+.links, .top {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.top .slogan span{
+    font-size: 30px;
+    display: block;
+    color: #5f8cf7;
+    font-style: oblique
+    
+}
+
+.header a{
+  /*Чтобы ничего не слиплось*/
+  display:inline-block;
+  padding:10px;
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+
+/*A IMG[alt="cardi black"] {
+    border: 2px solid orange;
+}
+
+form {
+    color: blue;
+    background-color: orange
+}
+
+img[alt="main"] {
+    border: 5px solid orange;
+}
+
+.menu {
+    background: url(../img/main.jpg) no-repeat right
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list li {
+    width: 100px;
+    height: 20px;
+    border: 1px solid #000;
+}
+
+.list + p {
+    color: dodgerblue
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+} */

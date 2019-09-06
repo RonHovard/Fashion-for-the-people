@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Контакты</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
     <!--ШАПКА-->
-    <h1 align="center">FASHION FOR THE PEOPLE</h1>
-    <p align="center"><i>Модная одежда, обувь и&nbsp;аксессуары по&nbsp;очень интересным ценам!</i></p>
+    <div class="header">
+        <h1>FASHION FOR THE PEOPLE</h1>
+        <p><i>Модная одежда, обувь и&nbsp;аксессуары по&nbsp;очень интересным ценам!</i></p>
+    </div>
     <hr>
     <!--МЕНЮ-->
     <ul class="menu">
@@ -26,7 +29,7 @@
             (function() {
                 var setting = {
                     "height": 250,
-                    "width": 650,
+                    "width": 700,
                     "zoom": 16,
                     "queryString": "улица Лепсе, 56, Киров, Кировская обл., Россия, 610033",
                     "place_id": "ChIJV1J09N_1_EMRmTRouXb2RRM",
@@ -52,9 +55,9 @@
     <ul>
         <li>Для того чтобы заказать товар и&nbsp;по&nbsp;любым вопросам пишите:
             <ul>
-                <li><a href="https://vk.com/fashion_for_the_people43" target="_blank"> Fashion for the people</a></li>
-                <li><a href="https://vk.com/anutaperevalova" target="_blank">Аня Каменева</a></li>
-                <li><a href="https://vk.com/id558495940" target="_blank">Anya Fashion</a></li>
+                <li><a class="link" href="https://vk.com/fashion_for_the_people43" target="_blank"> Fashion for the people</a></li>
+                <li><a class="link" href="https://vk.com/anutaperevalova" target="_blank">Аня Каменева</a></li>
+                <li><a class="link" href="https://vk.com/id558495940" target="_blank">Anya Fashion</a></li>
             </ul>
         </li>
     </ul>
@@ -69,12 +72,10 @@
         Обувь <input type="checkbox">
         Акссесуары <input type="checkbox"><br>
         Что-то&nbsp;другое:&nbsp;<input type="text" placeholder="укажите что имменно"><br><br>
-        Напишите пару строк: впечатления, пожелания...(Мы стремимся стать лучше!)<br>
-        <textarea name="message" id="#" cols="70" rows="5"></textarea> <br><br>
+        <textarea name="message" placeholder="Напишите пару строк: впечатления, пожелания...(Мы стремимся стать лучше!)" id="#" cols="70" rows="5"></textarea> <br><br>
         <input type="submit" value="СОХРАНИТЬ"> <input type="reset" value="СБРОСИТЬ">
     </form>
     <hr>
     <p><i>Все права защищены.</i></p>
     <p>&copy;&nbsp;Fashion for the people</p>
-</body>
-</html>
+</body></html>
