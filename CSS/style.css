@@ -1,17 +1,18 @@
+/* шапка */
 .header {
     color: blueviolet/*#5f8cc7*/;
-    background-color: orange/*#fdc97d*/ ;
+    background-color: orange/*#fdc97d*/;
     text-align: center;
     font-weight: 900;
 }
 
-
-
+/* картинка на главной */
 img[alt="main"] {
     outline: 5px solid orange;
-    margin: 1px 1px 1px -80px
+    margin: 1px 1px 1px -100px;
 }
 
+/* фон на всех страницах */
 body {
     background-color: #fefee5;
 }
@@ -22,7 +23,7 @@ body {
 
 .menu li a {
     color: dodgerblue;
-    text-decoration: none;
+    /*text-decoration: none;*/
     text-transform: uppercase;
     border: 3px solid transparent;
 }
@@ -39,20 +40,21 @@ body {
     color: #707070;
     font-size: 14px;
     font-style: italic;
-    line-height: 16px
+    line-height: 16px;
 }
 
 .list>li {
-    list-style-image: url(../img/checkmarks/145.png)
+    list-style-image: url(../img/checkmarks/145.png);
 }
 
 .list_2 {
-    list-style-image: url(../img/checkmarks/7.png)
+    list-style-image: url(../img/checkmarks/7.png);
 }
 
+/* Размеры полей ввода на стр. contacts */
 form input[type="text"] {
     width: 250px;
-    line-height: 20px
+    line-height: 20px;
 } 
 
 form input[placeholder], textarea[placeholder] {
@@ -60,12 +62,16 @@ form input[placeholder], textarea[placeholder] {
     color: #930;  /* Цвет текста */
     text-align: center;
     font-size: 10px;
-    font-style: oblique
+    font-style: oblique;
 }
 
 A IMG, .title {
     outline: 3px solid #00af64; /* Цветная рамка */
-    margin: 5px 5px 5px 40px
+    margin: 5px 5px 5px 40px;
+}
+
+A  {
+    text-decoration: none;
 }
 
 .links, .top {
@@ -79,7 +85,7 @@ A IMG, .title {
     font-size: 30px;
     display: block;
     color: #5f8cf7;
-    font-style: oblique
+    font-style: oblique;
     
 }
 
