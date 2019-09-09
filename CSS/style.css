@@ -1,10 +1,41 @@
 /* шапка */
 .header {
-    color: blueviolet/*#5f8cc7*/;
-    background-color: orange/*#fdc97d*/;
+    border: 3px solid orange;
+    background-color: rgb(250, 189, 5);
     text-align: center;
     font-weight: 900;
 }
+
+.header h1, .header p{
+    color: blue;   
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    width: 170px;
+    height: 22px;
+    text-align: center;
+    border: 2px solid blue;
+    color: blueviolet;
+    /*text-decoration: none;*/
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    padding-top: 5px;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+.menu li a:hover {
+    color: chartreuse;
+}
+
+.menu li a:active {
+    color: crimson;
+}
+
 
 /* картинка на главной */
 img[alt="main"] {
@@ -17,23 +48,12 @@ body {
     background-color: #fefee5;
 }
 
-.menu {
-    list-style-type: none;
-}
-
-.menu li a {
-    color: dodgerblue;
-    /*text-decoration: none;*/
-    text-transform: uppercase;
-    border: 3px solid transparent;
-}
 
 .heading {
     /*border:1px solid red;*/
     color: black;
     font-size: 18px;
-    font-weight:400  
-    background-color: #eaeaea;
+    font-weight: 400 background-color: #eaeaea;
 }
 
 .heading + p {
@@ -43,7 +63,7 @@ body {
     line-height: 16px;
 }
 
-.list>li {
+.list > li {
     list-style-image: url(../img/checkmarks/145.png);
 }
 
@@ -55,51 +75,61 @@ body {
 form input[type="text"] {
     width: 250px;
     line-height: 20px;
-} 
+}
 
-form input[placeholder], textarea[placeholder] {
+form input[placeholder],
+textarea[placeholder] {
     background-color: #fffb;
-    color: #930;  /* Цвет текста */
+    color: #930;
+    /* Цвет текста */
     text-align: center;
     font-size: 10px;
     font-style: oblique;
 }
 
-A IMG, .title {
-    outline: 3px solid #00af64; /* Цветная рамка */
+A IMG,
+.title {
+    outline: 3px solid #00af64;
+    /* Цветная рамка */
     margin: 5px 5px 5px 40px;
 }
 
-A  {
+A {
     text-decoration: none;
 }
 
-.links, .top {
-  display:flex;
-  justify-content:space-around;
-  align-items:center;
-  flex-wrap:wrap;
+.links,
+.top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.top .slogan span{
+.top .slogan span {
     font-size: 30px;
     display: block;
     color: #5f8cf7;
     font-style: oblique;
-    
+
 }
 
-.header a{
-  /*Чтобы ничего не слиплось*/
-  display:inline-block;
-  padding:10px;
+/*.header a{*/
+/*Чтобы ничего не слиплось*/
+/*display:inline-block;
+  padding:10px; */
 }
 
 .link {
     text-decoration: none;
     text-transform: uppercase;
+}
 
-/*A IMG[alt="cardi black"] {
+.footer {
+    padding-left: 10px
+}
+
+    /*A IMG[alt="cardi black"] {
     border: 2px solid orange;
 }
 
