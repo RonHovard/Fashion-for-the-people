@@ -10,6 +10,10 @@
     color: blue;   
 }
 
+.header img {
+    height: 160px;
+}
+
 .menu {
     list-style-type: none;
 }
@@ -83,6 +87,23 @@ body {
     list-style-image: url(../img/checkmarks/7.png);
 }
 
+form {
+    width: 430px;
+    height: auto;
+    text-align: center;
+    padding: 3px 1px 10px 1px;
+    background-color: rgb(220,220,150);
+}
+
+form p {
+    font-size: 18px
+}
+
+form, form input[type="text"], #comment {
+    border: 2px solid yellow;
+    border-radius: 10px;
+}
+
 /* Размеры полей ввода на стр. contacts */
 form input[type="text"] {
     width: 250px;
@@ -91,16 +112,16 @@ form input[type="text"] {
 }
 
 form input[placeholder],
-textarea[placeholder] {
+#comment {
     background-color: #fffb;
     color: #930;
     /* Цвет текста */
     text-align: center;
-    font-size: 10px;
+    font-size: 11px;
     font-style: oblique;
 }
 
-form input[type="text"]:hover {
+form input[placeholder="ВАШ E@MAIL"]:focus {
     background-color: burlywood;
     color: aquamarine;
 }
@@ -130,7 +151,7 @@ A {
 }
 
 .content a img:hover {
-    outline: 3px solid #fefee5;
+    outline: none;
 }
 
 .top .slogan span {
@@ -153,7 +174,8 @@ A {
 }
 
 .footer {
-    padding-left: 10px
+    padding-left: 10px;
+    background-color: rgb(255,226,170);
 }
 
 .specifications {
@@ -189,6 +211,16 @@ A {
     height: 25px;
     border: 2px solid #000;
 }
+
+caption {
+    text-align: left;
+    padding-left: 5px;
+}
+
+/*table:first-child {
+    height: 25px;
+    border: 2px solid #000;
+}*/
 
     /*A IMG[alt="cardi black"] {
     border: 2px solid orange;
