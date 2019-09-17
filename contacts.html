@@ -9,77 +9,81 @@
 
 <body>
     <!--ШАПКА-->
-    <div class="header">
-        <h1>FASHION FOR THE PEOPLE</h1>
-        <p><i>Модная одежда, обувь и&nbsp;аксессуары по&nbsp;очень интересным ценам!</i></p>
+    <div class="container">
+        <div class="header">
+            <img src="img/Logo.PNG" alt="LOGO">
+            <p><i>Модная одежда, обувь и аксессуары по очень интересным ценам!</i></p>
+            <!--МЕНЮ-->
+            <div class="menu">
+                <a href="index.html">ГЛАВНАЯ</a>
+                <a href="catalog.html">КАТАЛОГ</a>
+                <a href="contacts.html">КОНТАКТЫ</a>
+            </div>
+        </div>
         <hr>
-        <!--МЕНЮ-->
-        <ul class="menu">
-            <li><a href="index.html">ГЛАВНАЯ</a></li>
-            <li><a href="catalog.html">КАТАЛОГ</a></li>
-            <li><a href="contacts.html">КОНТАКТЫ</a></li>
+        <h1>Контакты</h1>
+        <p class="text">Наш адрес: РФ, Кировская область, г. Киров, улица Лепсе, дом 56.</p> <br>
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+            <script>
+                (function() {
+                    var setting = {
+                        "height": 374,
+                        "width": 900,
+                        "zoom": 16,
+                        "queryString": "улица Лепсе, 56, Киров, Кировская обл., Россия, 610033",
+                        "place_id": "ChIJV1J09N_1_EMRmTRouXb2RRM",
+                        "satellite": false,
+                        "centerCoord": [58.60923592602552, 49.61749910000003],
+                        "cid": "0x1345f676b9683499",
+                        "cityUrl": "/russia/kirov-36929",
+                        "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                        "embed_id": "79556"
+                    };
+                    var d = document;
+                    var s = d.createElement('script');
+                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=79556';
+                    s.async = true;
+                    s.onload = function(e) {
+                        window.OneMap.initMap(setting)
+                    };
+                    var to = d.getElementsByTagName('script')[0];
+                    to.parentNode.insertBefore(s, to);
+                })();
+
+            </script><a href="https://1map.com/map-embed?embed_id=79556">1map. com</a>
+        </div>
+        <ul class="main_list">
+            <li>Для того чтобы заказать товар и&nbsp;по&nbsp;любым вопросам пишите:
+                <ul class="list_2">
+                    <li><a class="link" href="https://vk.com/fashion_for_the_people43" target="_blank"> Fashion for the people</a></li>
+                    <li><a class="link" href="https://vk.com/anutaperevalova" target="_blank">Аня Каменева</a></li>
+                    <li><a class="link" href="https://vk.com/id558495940" target="_blank">Anya Fashion</a></li>
+                </ul>
+            </li>
         </ul>
+        <hr>
+        <form action="#">
+            <p>Напишите нам:</p>
+            <input type="text" placeholder="ВАШЕ ИМЯ"><br><br>
+            <input type="text" placeholder="ВАШ E@MAIL"><br><br>
+            Ваш пол: <br>
+            М <input type="radio" name="pol" checked><br>
+            Ж <input type="radio" name="pol"><br><br>
+            Что Вас заинтересовало в&nbsp;нашем магазине: <br>
+            Одежда <input type="checkbox">
+            Обувь <input type="checkbox">
+            Акссесуары <input type="checkbox"><br>
+            Что-то&nbsp;другое:&nbsp;<input type="text" placeholder="укажите что имменно"><br><br>
+            <textarea name="message" placeholder="Напишите пару строк: впечатления, пожелания...(Мы стремимся стать лучше!)" id="comment" cols="70" rows="5"></textarea> <br><br>
+            <input type="submit" value="ОТПРАВИТЬ"> <input type="reset" value="СБРОСИТЬ">
+        </form>
+        <hr>
+        <div class="footer">
+            <p><i>Все права защищены.</i></p>
+            <a class="link" href="https://vk.com/fashion_for_the_people43" target="_blank">&copy;&nbsp;Fashion for the people, 2019</a>
+        </div>
     </div>
-    <hr>
-    <h1>Контакты</h1>
-    <p class="text">Наш адрес: РФ, Кировская область, г. Киров, улица Лепсе, дом 56.</p> <br>
-    <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-        <script>
-            (function() {
-                var setting = {
-                    "height": 250,
-                    "width": 700,
-                    "zoom": 16,
-                    "queryString": "улица Лепсе, 56, Киров, Кировская обл., Россия, 610033",
-                    "place_id": "ChIJV1J09N_1_EMRmTRouXb2RRM",
-                    "satellite": false,
-                    "centerCoord": [58.60923592602552, 49.61749910000003],
-                    "cid": "0x1345f676b9683499",
-                    "cityUrl": "/russia/kirov-36929",
-                    "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
-                    "embed_id": "79556"
-                };
-                var d = document;
-                var s = d.createElement('script');
-                s.src = 'https://1map.com/js/script-for-user.js?embed_id=79556';
-                s.async = true;
-                s.onload = function(e) {
-                    window.OneMap.initMap(setting)
-                };
-                var to = d.getElementsByTagName('script')[0];
-                to.parentNode.insertBefore(s, to);
-            })();
-        </script><a href="https://1map.com/map-embed?embed_id=79556">1map. com</a>
-    </div>
-    <ul class="list">
-        <li>Для того чтобы заказать товар и&nbsp;по&nbsp;любым вопросам пишите:
-            <ul class="list_2">
-                <li><a class="link" href="https://vk.com/fashion_for_the_people43" target="_blank"> Fashion for the people</a></li>
-                <li><a class="link" href="https://vk.com/anutaperevalova" target="_blank">Аня Каменева</a></li>
-                <li><a class="link" href="https://vk.com/id558495940" target="_blank">Anya Fashion</a></li>
-            </ul>
-        </li>
-    </ul>
-    <hr>
-    <form action="#">
-        <p>Напишите нам:</p>
-        <input type="text" placeholder="ВАШЕ ИМЯ"><br><br>
-        <input type="text" placeholder="ВАШ E@MAIL"><br><br>
-        Ваш пол: <br>
-        М <input type="radio" name="pol" checked><br>
-        Ж <input type="radio" name="pol"><br><br>
-        Что Вас заинтересовало в&nbsp;нашем магазине: <br>
-        Одежда <input type="checkbox">
-        Обувь <input type="checkbox">
-        Акссесуары <input type="checkbox"><br>
-        Что-то&nbsp;другое:&nbsp;<input type="text" placeholder="укажите что имменно"><br><br>
-        <textarea name="message" placeholder="Напишите пару строк: впечатления, пожелания...(Мы стремимся стать лучше!)" id="comment" cols="70" rows="5"></textarea> <br><br>
-        <input type="submit" value="ОТПРАВИТЬ"> <input type="reset" value="СБРОСИТЬ">
-    </form>
-    <hr>
-    <div class="footer">
-        <p><i>Все права защищены.</i></p>
-        <a class="link" href="https://vk.com/fashion_for_the_people43" target="_blank">&copy;&nbsp;Fashion for the people, 2019</a>
-    </div>
-</body></html>
+</body>
+
+</html>
