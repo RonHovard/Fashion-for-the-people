@@ -1,9 +1,11 @@
 .container {
     width: 900px;
     margin: 0 auto;
+    padding: 3px;
+    background-color: rgb(253,248,190);
 }
 
-.container .header img {
+.header img {
     width: 260px;
     float: left;
     margin-top: 10px;
@@ -14,9 +16,9 @@
 /* шапка и кнопки(button) */
 .header {
     border: 3px solid orange;
-    background-color: rgb(250, 189, 5);
+    background-color: rgb(250, 189, 30);
     font-weight: 900;
-    height: 290px;
+    height: 270px;
 }
 .header p{
     color: blue;
@@ -25,10 +27,9 @@
     margin-top: 100px;
 }
 .menu {
-    list-style-type: none;
-    clear: both;
     float: right;
     margin-right: 40px;
+    margin-top: 80px;
 }
 .menu a, .button {
     width: 170px;
@@ -47,7 +48,7 @@
 .menu a:hover, .button:hover {
     color: chartreuse;
 }
-.menu a:active {
+.menu a:active, .button:active {
     color: crimson;
 }
 
@@ -59,6 +60,10 @@ body {
 
 
 /*Стили для страниц товаров каталога*/
+.content {
+    clear: both;
+}
+
 .content a {
     float: left;
     margin: 1px 30px 20px 5px;
@@ -74,28 +79,40 @@ body {
     list-style-image: url(../img/checkmarks/145.png);
     margin-left: 180px;
 }
-
-
-.catalog a span {
-    margin-left: 10px;
+/*Фото асортимента товаров на странице товара каталога*/
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    clear: both;
 }
 
+
+/*Каталог*/
+.catalog {
+    margin-left: 10px;
+}
+.catalog div{
+    display: inline-block;
+    margin-right: 40px;
+}
 .catalog a img {
     outline: 2px solid rgb(0,174,173);
-    margin-left: 10px;
 }
-
 .catalog a img:hover {
     outline:  2px solid blueviolet;
 }
 
-/*Списоки на главной*/
+
+/*Списки на "главной" и в "контактах"*/
 .main_list {
     list-style-image: url(../img/checkmarks/145.png);
 }
 .list_2 {
     list-style-image: url(../img/checkmarks/7.png);
 }
+
 
 /*Стили форм обратной связи, на странице "контакты"*/
 form {
@@ -133,38 +150,37 @@ form input[placeholder="ВАШ E@MAIL"]:focus {
 }
 
 
+
+
 /*Все ссылки без подчёркивания*/
 A {
     text-decoration: none;
 }
 
 
-.links,
-.top {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    clear: both;
-}
-
 .text::first-letter {
     font-size: 22px;
     color: rgb(108,2,94);
 }
 
+
+/*Картинка и слоган на главной*/
+.top img {
+   float: left; 
+   outline: 5px solid orange;
+   margin: 10px 120px 10px 3px; 
+}
+.top .slogan {
+    padding-top: 170px;
+}
 .top .slogan span {
-    font-size: 30px;
+    font-size: 26px;
     display: block;
     color: #5f8cf7;
     font-style: oblique;
 }
 
-/* картинка на главной */
-img[alt="main"] {
-    outline: 5px solid orange;
-    margin: 1px 1px 1px -100px;
-}
+
 
 
 .footer {
