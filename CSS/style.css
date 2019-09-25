@@ -63,21 +63,23 @@ body {
 .content {
     clear: both;
 }
-
 .content a {
     float: left;
     margin: 1px 30px 20px 5px;
 }
 .content a img, .links a img {
     outline: 2px solid rgb(1,177,177);
+    width: 200px
 }
 .content img:hover, .links img:hover {
     outline: none;
 }
+.content .list {
+    overflow: hidden;
+}
 /*Список: характеристики товара каталога*/
 .list > li {
     list-style-image: url(../img/checkmarks/145.png);
-    margin-left: 180px;
 }
 /*Фото асортимента товаров на странице товара каталога*/
 .links {
@@ -168,7 +170,7 @@ A {
 .top img {
    float: left; 
    outline: 5px solid orange;
-   margin: 10px 120px 10px 3px; 
+   margin: 10px 90px 10px 3px; 
 }
 .top .slogan {
     padding-top: 170px;
